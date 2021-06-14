@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Twitter Sentiment Analysis - Team Tweety </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+</head>
+<body>
+
+<div class="jumbotron bg-cover" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.9) 100%), url(https://placeimg.com/1000/480/tech)">
+    <div class="container">
+    <h1 class="display-4">Twitter Sentiment Machine Learning Analysis </h1>
+    <h4>The pupose of this application is to use machine learning to analyze Tweets and categorize them into a positive or a negative sentiment.</h4> 
+    <hr class="my-4">
+        <p>Team Tweety:Aashita Rakesh, Francisco Zuluaga, Letha Varughese , Ryan Sabon</p> 
+    </div>
+</div>
+<!-- <div class="container">    
+    <div class="row">
+     <div class="col-md-12">
+      <h3>Project Scope </h3>
+      <br>    -->
+     <!-- <p>The pupose of this application is to determine whether the input tweet is a Positive or a Negative thought.</p>  -->
+                    
+    <!-- </div> 
+    </div> -->
+</div>
+
+<div class="container">
+    
+    <div class="login">
+        <h1>Sentiment Analysis</h1>
+    
+         <!-- Main Input For Receiving Query to our ML -->
+        <form action="/predict"method="POST">
+            <input type="text" class="form-control" name="input_tweet" placeholder="Input Tweet" required="required" />
+            <br>
+            <button type="submit" class="btn btn-primary">Predict!</button>
+        </form>
+    
+       <br>
+       <br>
+       {{ predict_text }}
+    
+     </div>
+</div>
+</body>
+</html>
